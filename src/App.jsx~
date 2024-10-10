@@ -1,0 +1,25 @@
+import './App.css';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import AddressList from './components/AddressList.jsx';
+import Login from "./components/Login.jsx";
+import {useState} from "react";
+
+function App() {
+    const [logined, setLogined] = useState(false)
+
+  return (
+    <div className='App'>
+      <AppBar position='static'>
+        <Toolbar>
+          <Typography variant='h6'>Address</Typography>
+        </Toolbar>
+      </AppBar>
+      {/*<AddressList />*/}
+        {setLogined(false)}
+        <Login />
+    </div>
+  );
+}
+export default App;
